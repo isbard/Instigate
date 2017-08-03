@@ -15,14 +15,15 @@ a{
   color: #777;
   transition: color 1s ease;
 }
-a:hover{
+a:hover, a:focus{
   color: #bbb;
 
 }
 
 .fa{
   font-size: 2.5em;
-  padding: 0 0.6em;
+  padding: 0 0.3em;
+  margin: 0 0.3em;
 }
 
 /*-----------------------------------------------------
@@ -52,3 +53,9 @@ a:hover{
 /*-----------------------------------------------------
   Media Queries
 -----------------------------------------------------*/
+@media (max-width: 520px) {
+  .fa {
+    margin: 0 0.1em;
+  }
+
+}
