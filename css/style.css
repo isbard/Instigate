@@ -3,6 +3,8 @@
 -----------------------------------------------------*/
 p.centred{
   text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 2em;
 }
 
 .row{
@@ -10,12 +12,17 @@ p.centred{
 }
 
 a{
-  color: #555;
+  color: #777;
+  transition: color 1s ease;
+}
+a:hover{
+  color: #bbb;
+
 }
 
 .fa{
-  font-size: 3em;
-  padding: 0 0.5em;
+  font-size: 2.5em;
+  padding: 0 0.6em;
 }
 
 /*-----------------------------------------------------
@@ -25,6 +32,10 @@ a{
   margin: 3em;
 }
 
+#social-media{
+  text-align: right;
+}
+
 
 /*-----------------------------------------------------
   Body Image Area
@@ -32,6 +43,9 @@ a{
 
 #body-image{
 
+}
+.app-links{
+  text-align: center;
 }
 
 
