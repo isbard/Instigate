@@ -26,10 +26,10 @@ a:hover i, a:focus i{
 
 }
 
-.fa{
+.fa, .app-links .fa{
   font-size: 2.3em;
   padding: 0 0.3em;
-  margin: 0 0.3em;
+  margin: 0.5em 0.3em;
 }
 
 /*-----------------------------------------------------
@@ -43,10 +43,18 @@ a:hover i, a:focus i{
   text-align: right;
 }
 
+#logo{
+  max-width:400px;
+}
+
 
 /*-----------------------------------------------------
   Body Image Area
 -----------------------------------------------------*/
+#body-image {
+  padding:1em 0;
+}
+
 
 #body-image img{
   margin-bottom:2em;
@@ -60,9 +68,19 @@ a:hover i, a:focus i{
 /*-----------------------------------------------------
   Media Queries
 -----------------------------------------------------*/
+@media (max-width: 630px) {
+  .fa {
+    margin: 0 0.2em;
+    font-size: 1.8em;
+  }
+
 @media (max-width: 520px) {
   .fa {
-    margin: 0 0.1em;
+    margin: 0.5em 0.1em;
+    font-size: 1.2em;
+  }
+  #header-bar{
+    margin:1em 0;
   }
 
 }
