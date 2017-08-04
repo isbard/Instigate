@@ -43,9 +43,6 @@ a:hover i, a:focus i{
   text-align: right;
 }
 
-#logo{
-  max-width:400px;
-}
 
 
 /*-----------------------------------------------------
@@ -68,19 +65,37 @@ a:hover i, a:focus i{
 /*-----------------------------------------------------
   Media Queries
 -----------------------------------------------------*/
-@media (max-width: 630px) {
+/*large up */
+@media (min-width: 64em) {
+  #logo{
+    max-width:400px;
+  }
+}
+/*medium down */
+@media (max-width: 64em) {
   .fa {
     margin: 0 0.2em;
     font-size: 1.8em;
   }
+  #logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-@media (max-width: 520px) {
+/*small only */
+@media (max-width: 40em) {
   .fa {
     margin: 0.5em 0.1em;
-    font-size: 1.2em;
+    font-size: 1.8em;
+  }
+  #social-media{
+    text-align: center;
+    padding-top: 1em;
   }
   #header-bar{
-    margin:1em 0;
+    margin:1em 0 0 0;
   }
 
 }
